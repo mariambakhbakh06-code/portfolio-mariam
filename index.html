@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Mariam Bakhbakh - Développeuse Web Full Stack passionnée par les interfaces dynamiques." />
+  <title>Mariam Bakhbakh | Portfolio</title>
+
+  <!-- Icones et animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Ton fichier CSS personnalisé -->
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Mariam<span> Bakhbakh</span></a>
+    <i class="bx bx-menu" id="menu-icon" aria-label="Open Menu"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home animate__animated animate__fadeInDown" id="home">
+    <div class="home-content" data-aos="fade-up">
+      <h1>Bonjour, je suis <span>Mariam</span></h1>
+      <h3 class="animate__animated animate__fadeInUp">Développeuse Web Full Stack</h3>
+      <p>Passionnée par la création d’interfaces intuitives et dynamiques. En formation full stack avec un objectif futur dans la data visualisation.</p>
+      <div class="btn-group animate__animated animate__fadeIn">
+        <a href="#contact" class="btn">Me contacter</a>
+        <a href="https://resonant-panda-77d28b.netlify.app/cv_mariam_bakhbakh.pdf.pdf" target="_blank" download>📄 Télécharger le CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" data-aos="fade-right">
+    <div class="about-content">
+      <h2>À propos de <span>moi</span></h2>
+      <p>
+        Baccalauréat en sciences physiques, actuellement en formation en développement web full stack.<br>
+        Compétences en HTML, CSS, Bootstrap, PHP, JavaScript et MySQL.<br>
+        Formation en cours sur Python via Udemy.<br>
+        Valeurs : créativité, responsabilité, esprit d’équipe, communication.
+      </p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills" data-aos="zoom-in">
+    <h2>Mes <span>Compétences</span></h2>
+    <div class="skills-container">
+      <div class="skill-item"><i class="bx bxl-html5 skill-icon"></i><h3>HTML & CSS</h3></div>
+      <div class="skill-item"><i class="bx bxl-bootstrap skill-icon"></i><h3>Bootstrap</h3></div>
+      <div class="skill-item"><i class="bx bxl-javascript skill-icon"></i><h3>JavaScript</h3></div>
+      <div class="skill-item"><i class="bx bxl-php skill-icon"></i><h3>PHP</h3></div>
+      <div class="skill-item"><i class="fa-solid fa-database skill-icon"></i><h3>MySQL</h3></div>
+      <div class="skill-item"><i class="bx bxl-python skill-icon"></i><h3>Python (en cours)</h3></div>
+      <div class="skill-item"><i class="bx bx-user-check skill-icon"></i><h3>Soft Skills</h3></div>
+    </div>
+  </section>
+<section class="projects" id="projects" data-aos="fade-up">
+  <h2>Mes <span>Projets</span></h2>
+  
+  <div class="projects-container">
+    
+    <!-- Carte projet PHP -->
+    <div class="project-card">
+      <span class="folder-icon">📁</span>
+      <h3>projet PHP: SiteWebP</h3>
+      <p>C'est un site dynamique développé avec<br>PHP et MySQL</p>
+      <a href="https://github.com/mariambakhbakh06-code/SiteWebP" class="btn-readmore" target="_blank">🔗 voici le lien de github</a>
+    </div>
+
+    <!-- Carte projet Python -->
+    <div class="project-card">
+      <img src="img/image_interface.png" alt="Projet en ligne" class="project-img">
+      <div class="project-content">
+        <h3>Interface (Python)</h3>
+        <p>📁 Voir le projet Python sur Replit</p>
+        <a href="https://replit.com/@mariambakhbakh0/interfaceTK" class="btn-readmore" target="_blank">Voir l'Interface</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section class="contact" id="contact" data-aos="fade-left">
+    <h2>Contactez <span>moi</span></h2>
+    <p>Pour toute collaboration ou question, n’hésitez pas à me contacter !</p>
+    <div class="contact-container">
+      <a class="info-item email" href="mailto:mariambakhbakh06@gmail.com"><i class="bx bx-envelope"></i><h4>Email</h4><p>mariambakhbakh06@gmail.com</p></a>
+      <div class="info-item location"><i class="bx bx-map"></i><h4>Localisation</h4><p>Casablanca, Maroc</p></div>
+      <a class="info-item linkedin" href="https://www.linkedin.com/in/mariam-bakhbakh" target="_blank"><i class="bx bxl-linkedin"></i><h4>LinkedIn</h4><p>Mariam Bakhbakh</p></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Mariam Bakhbakh. Tous droits réservés.</p>
+  </footer>
+
+  <!-- JS pour le menu et AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
